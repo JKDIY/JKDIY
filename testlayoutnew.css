@@ -1,0 +1,133 @@
+
+
+body {margin:0;}
+
+
+
+h1,h2,h3 {
+    font-family: "double-pica-sc", "baskerville Old Face", "Times New Roman", "Serif";
+    }
+
+h1 {
+ font-size: 3.3684em;
+ line-height: 1.2656em;
+ margin-top: 0.4219em;
+ margin-bottom: 0;
+ color: #DE6238;
+}
+
+h2 {
+ font-size: 1.5em;
+ line-height: 1.2656em;
+ margin: 0.4219em auto 0.4219em auto;
+}
+
+.ex1{
+    text-align: center;
+    margin: 1% 10%;
+}
+
+p {
+ font-size: 1em;
+ line-height: 1.4211em;
+  font-weight: 100;  
+}
+
+.navbar {
+    z-index:1; 
+  padding: 0px 15px;
+  overflow: hidden;
+  background-color:#e9967a;
+  position: fixed;
+  top: 0;
+  width:100%;
+   
+}
+
+.navbar a {
+  color: #f2f2f2;
+  display: block;
+  float: left;
+  text-decoration: none;
+  font-size: 17px;
+  padding: 13px 10px;
+  text-align: center;
+}
+
+
+.navbar a:active {
+  background-color: red;
+    
+}
+
+.navbar a:hover {
+  background: #e9967a;
+  color: black;
+}
+
+.main {
+  padding: 10px;
+  margin-top: 30px;
+  height; 900px;
+    
+    }
+
+.center {
+    
+background: url(images/backgcar.png); 
+background-repeat: no-repeat;
+    background-size: cover;
+      background-position: center;
+    text-align: center;
+  
+}
+     
+
+}
+
+.box {
+      display:inline-block;
+    text-align: center;
+}
+   
+
+
+.aline {
+    text-align: center;
+ 
+    }
+
+.container {
+    display: inline-block;
+    width: 250px;
+    height: 300px;
+    
+}
+
+.container img {
+    width: 148px;
+    height: 200px
+    
+}
+
+footer {
+  text-align: center;
+  padding:0 px;
+  background-color: #e9967a;
+  color: white;
+}
+
+
+/* alignment for films*/
+
+.alinefilm {
+    text-align: center;
+ 
+    }
+
+.containerfilm {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+  
+}
