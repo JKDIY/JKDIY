@@ -1,0 +1,169 @@
+
+
+body {margin:0;}
+
+
+
+h1,h2,h3 {
+    font-family: "double-pica-sc", "baskerville Old Face", "Times New Roman", "Serif";
+    }
+
+h1 {
+ font-size: 3.3684em;
+ line-height: 1.2656em;
+ margin-top: 0.4219em;
+ margin-bottom: 0;
+ color: #DE6238;
+}
+
+h2 {
+ font-size: 1.5em;
+ line-height: 1.2656em;
+ margin: 0.4219em auto 0.4219em auto;
+}
+
+.ex1{
+    text-align: center;
+    margin: 1% 10%;
+}
+
+p {
+ font-size: 1em;
+ line-height: 1.4211em;
+  font-weight: 100;  
+}
+
+.navbar {
+    z-index:1; 
+  padding: 0px 15px;
+  overflow: hidden;
+  background-color:#e9967a;
+  position: fixed;
+  top: 0;
+  width:100%;
+   
+}
+
+.navbar a {
+  color: #f2f2f2;
+  display: block;
+  float: left;
+  text-decoration: none;
+  font-size: 17px;
+  padding: 13px 10px;
+  text-align: center;
+}
+
+.navbar a:hover {
+  background: #e7f6fb;
+  color: black;
+}
+
+.centertitle {
+    background-color: #e1eff5;
+    text-align: center;
+   
+    }
+
+.left {
+    text-align: left;
+    
+}
+
+.c {
+    
+    text-align: center;
+}
+.alinephoto {
+   
+    text-align: center;
+ 
+    }
+      
+
+.containerphoto {
+    
+ display: inline-block;
+    background-color:#7acde9;
+   width: 210px;
+    
+}
+
+
+.containerphoto img {
+    height: 180px;
+    width: 150px;
+}
+
+.advise {
+  background-color: #e1eff5;
+  color: #3f688a;
+    text-align: justify;
+  border: 2px solid #7acde9;
+  margin-right: 10px;
+    margin-left: 10px;
+  padding: 5px;
+}
+
+.advise img {
+    
+  float: right;
+    
+}
+
+.advisemind img {
+    
+  float: left;
+    
+}
+
+.advisemind {
+  background-color: #e1eff5;
+  color: #3f688a;
+    text-align: justify;
+  border: 2px solid #7acde9;
+  margin-right: 10px;
+    margin-left: 10px;
+  padding: 5px;
+}
+
+.zoom {
+  
+  background-color: #bce6f4;
+  transition: transform .1s;
+  
+}
+.zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+
+/* setting up a side bar */
+.mainsec {
+  margin-left: 100px; /* Same width as the sidebar + left position in px */
+    margin-right: 100px;
+}
+
+.sidenav {
+  width: 90px;
+  position: fixed;
+  z-index: 1;
+  top: 66px;
+  left: 10px;
+  background: #e1eff5;
+  overflow-x: hidden;
+  padding: 8px 0;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  color: #2196F3;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #064579;
+}
