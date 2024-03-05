@@ -1,112 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-       
-   <link rel="stylesheet" href="photo.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="photo.css">
     <link rel="stylesheet" href="testlayoutnew.css">
-
-        <title>Projects</title>
-    </head>
-    
-
-    <div class="navbar">
-        
-         <a href="index.html">Home</a>
-    <a href="feature.html">Today's Feature</a>
-     <a href="photos.html">Photo Gallary</a>
-     <a href="projects.html">DIY Projects</a>
-    <a href="forsale.html"style="background-color:#DE6238;">For Sale</a>
-       
-        
-    </div>
- 
-    <div class="main"></div>
-            
+    <title>Projects</title>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 0 auto; /* Center the table horizontally */
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #ADD8E6;
+        }
+        .item-img {
+            max-width: 100px;
+            height: auto;
+        }
+    </style>
+</head>
 <body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="feature.html">Today's Feature</a>
+        <a href="photos.html">Photo Gallery</a>
+        <a href="projects.html">DIY Projects</a>
+        <a href="forsale.html" style="background-color:#DE6238;">For Sale</a>
+    </div>
 
-     <div class="sidenav">
-  <a href="#Auto.html">Artworks</a>
-  <a href="generalitems.html">General Items</a>
-</div>
+    <div class="sidenav">
+        <a href="artwork.html">Artworks</a>
+        <a href="generalitems.html">General Items</a>
+    </div>
     
- 
-     <div class="mainsec">  
-    
+ <div class="mainsec">
+        <div class="centertitle">
+            <p>Coming Soon.</p>
+        </div>
+    <table>
+        <tr>
+            <th>Item #</th>
+            <th>Item Description</th>
+            <th>Price</th>
+            <th>Image</th>
+        </tr>
+        <tr>
+            <td>001</td>
+            <td>GE Washer/ Dryer</td>
+            <td>$300.00</td>
+            <td><a href="large_image1.html"><img src="images/Generalwasherdryer.jpg" alt="Product A"
+                                                  class="item-img"></a></td>
+        </tr>
+        <tr>
+            <td>002</td>
+            <td>F30 328i Xdrive 2014</td>
+            <td>$19,000.00</td>
+            <td><a href="large_image2.html"><img src="images/automaintain.jpg" alt="Product B"
+                                                  class="item-img"></a></td>
+        </tr>
+        <!-- Add more rows as needed -->
+    </table>
 
-<div class="centertitle">
-        
-    <p> These are hand drawn painted orginals. If you will to make an order for a print, please let me know.</p>
+
+    <p>Reply to Email with Item Number</p>
+    <form action="#" method="get">
+        <label for="item-number">Select Item Number:</label>
+        <select id="item-number" name="item-number">
+            <option value="001">Item 001</option>
+            <option value="002">Item 002</option>
+            <option value="003">Item 003</option>
+            <!-- Add more options as needed -->
+        </select>
+        <br>
+        <input type="submit" value="Reply">
+    </form>
+
+    <script>
+        // JavaScript to handle form submission
+        document.querySelector('form').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent default form submission
+            var itemNumber = document.getElementById('item-number').value;
+            var recipientEmail = 'recipient@example.com'; // Change this to the recipient's email address
+            var subject = 'Reply regarding item ' + itemNumber;
+            var mailtoLink = 'mailto:' + recipientEmail + '?subject=' + encodeURIComponent(subject);
+            window.location.href = mailtoLink;
+        });
+    </script>
 </div>
-         
-         
-<div class="alinephoto">
-          
-     <div class="containerphoto">
-               
-   <div class="zoom">
-        <a href="contact.html"><img src="images/nathanbefore.jpg" alt="" style="width:200px" style="height:160px"></a>
-        <div class="desc"> size price </div> 
-        </div>
-        </div>
-    
-    
-    <div class="containerphoto">
-         <div class="zoom">
-        <a href="#index.html"><img src="images/Nathantub.jpg" alt="yard" style="width:160px"></a>
-             <div class="desc"> size pricel</div> 
-         </div>
-    </div>
-        
-    <div class="containerphoto">
-         <div class="zoom">
-        <a href="#index.html"><img src="images/tileing.jpg" alt="yard" style="width:160px"></a>
-             <div class="desc"> size price</div> 
-         </div>
-    </div>
-    
-     <div class="containerphoto">
-         <div class="zoom">
-        <a href="#index.html"><img src="images/cement.jpg" alt="yard" style="width:200px"></a>
-             <div class="desc"> size price</div> 
-        </div>
-    </div>
-</div>     
-                  
-<div class="alinephoto">
-          
-      <div class="containerphoto">
-         <div class="zoom">
-        <a href="#index.html"><img src="images/flooring.jpg" alt="yard" style="width:200px"></a>
-        <div class="desc"> size price</div> 
-    </div>
-    </div>
-    
-    
-    <div class="containerphoto">
-         <div class="zoom">
-        <a href="#index.html"><img src="images/nathansink.jpg" alt="yard" style="width:200px"></a>
-             <div class="desc"> size price</div> 
-         </div>
-    </div>
-        
-    <div class="containerphoto">
-         <div class="zoom">
-        <a href="#index.html"><img src="images/complete2.jpg" alt="yard" style="width:200px"></a>
-             <div class="desc"> size price</div> 
-         </div>
-    </div>
-    
-     <div class="containerphoto">
-         <div class="zoom">
-        <a href="#index.html"><img src="images/nathancomplete.jpg" alt="yard" style="width:200px"></a>
-             <div class="desc"> size price</div>  
-       </div>               
-    </div>
-   
-      
-</div>
-    </div>
-       
 </body>
 </html>

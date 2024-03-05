@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Large Image</title>
+<style>
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  .back-button {
+    display: block;
+    margin: 20px auto; /* Adjust the margin as needed */
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<img src="images/large.jpg" alt="Large Image" onclick="openNewPage()">
+<script>
+function openNewPage() {
+  window.open('newpage.html', '_blank');
+  window.close();
+}
+</script>
+<a href="artwork.html" class="back-button">Go Back</a>
+</body>
+</html>
