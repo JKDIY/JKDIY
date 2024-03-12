@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="photo.css">
     <link rel="stylesheet" href="testlayoutnew.css">
-    <title>Projects</title>
+    <title>Items</title>
     <style>
         table {
             width: 50%;
@@ -71,10 +71,11 @@
             <!-- Add more rows as needed -->
        
 
-        <button onclick="toggleOrderForm()">Place Order</button>
-       
+        <!--<button onclick="toggleOrderForm()">Place Order</button> --->
+       <button style="margin-left: 60px; color: #DE6238;" onclick="toggleOrderForm()">Place Order</button>
+          
         <div class="order-form-container" id="order-form-container">
-            <p>Thank you for your interest. By replying to an item, you acknowledge that you have read and agreed to the terms outlined in the purchase disclaimer.</p>
+            <p>Thank you for your interest.</p>
             <form id="order-form" action="#" method="get">
                 <label for="item-number">Select Item Number:</label>
                 <select id="item-number" name="item-number">
@@ -87,6 +88,7 @@
                 <input type="submit" value="Reply">
             </form>
         </div>
+            
         </table>
     </div>
 
