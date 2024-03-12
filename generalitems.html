@@ -26,6 +26,7 @@
         }
         .order-form-container {
             display: none;
+            
         }
     </style>
 </head>
@@ -40,7 +41,7 @@
 
     <div class="sidenav">
         <a href="#artwork.html">Artwork</a>
-        <a href="generalitems.html">General Items</a>
+        <a href="generalitems.html" style="background-color:#ADD8E6;">General Items</a>
     </div>
     
     <div class="mainsec">
@@ -70,10 +71,11 @@
             </tr>
             <!-- Add more rows as needed -->
        
-
+ </table>
+        <div class="centertitle">
         <!--<button onclick="toggleOrderForm()">Place Order</button> --->
-       <button style="margin-left: 60px; color: #DE6238;" onclick="toggleOrderForm()">Place Order</button>
-          
+       <button style="margin-left: 6px; color: #DE6238;" onclick="toggleOrderForm()">Place Order</button>
+            </div>
         <div class="order-form-container" id="order-form-container">
             <p>Thank you for your interest.</p>
             <form id="order-form" action="#" method="get">
@@ -89,7 +91,7 @@
             </form>
         </div>
             
-        </table>
+        
     </div>
 
     <script>
