@@ -83,16 +83,21 @@
     </form>
 
     <script>
-        // JavaScript to handle form submission
-        document.querySelector('form').addEventListener('submit', function (event) {
-            event.preventDefault(); // Prevent default form submission
-            var itemNumber = document.getElementById('item-number').value;
-            var recipientEmail = 'recipient@example.com'; // Change this to the recipient's email address
-            var subject = 'Reply regarding item ' + itemNumber;
-            var mailtoLink = 'mailto:' + recipientEmail + '?subject=' + encodeURIComponent(subject);
-            window.location.href = mailtoLink;
-        });
-    </script>
+    // JavaScript to handle form submission
+    document.querySelector('form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent default form submission
+        var itemNumber = document.getElementById('item-number').value;
+        var recipientEmail = 'recipient@example.com'; // Change this to the recipient's email address
+        var subject = 'Reply regarding item ' + itemNumber;
+        var body = 'Thank you for your order. I will get back to you to discuss delivery and payment plans'; // Add body content if needed
+
+        // Construct mailto link for Gmail
+        var mailtoLink = 'https://mail.google.com/mail/?view=cm&fs=1&to=' + recipientEmail + '&su=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+
+        // Open Gmail compose window
+        window.open(mailtoLink, '_blank');
+    });
+</script>
 </div>
 </body>
 </html>
